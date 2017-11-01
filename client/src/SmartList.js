@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { asyncUpdate } from './store';
+import './smartList.css';
 
 class SmartList extends Component {
 
@@ -20,8 +21,8 @@ class SmartList extends Component {
             return <div>spinner...</div>
         }
         return (
-            <div>
-                <table>
+            <div className="smart-list">
+                <table className="people-table">
                     <thead>
                         <tr>
                             <th>Name</th>

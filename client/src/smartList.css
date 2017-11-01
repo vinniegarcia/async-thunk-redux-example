@@ -1,0 +1,9 @@
+
+.people-table {
+    margin: auto;
+    width: 750px;
+}
+
+.people-table th, .people-table td {
+    text-align: left;
+}

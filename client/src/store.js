@@ -35,7 +35,7 @@ function setFetching (isFetching) {
 
 async function asyncUpdate (payload) {
 
-    const response = await fetch('http://localhost:3001/', {
+    const response = await fetch('http://localhost:3001/?total=1000', {
         method: 'GET',
         mode: 'CORS'
     })

@@ -4,7 +4,8 @@ const express = require('express'),
 
 app.get('/', (req, res) => {
     let people = [];
-    for (var i = 0; i < 100; i++) {
+    const total = req.query.total || 100;
+    for (var i = 0; i < total; i++) {
         people.push({
             name: faker.name.findName(),
             age: Math.random() * 100,
